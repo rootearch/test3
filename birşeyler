@@ -1,0 +1,9 @@
+		{
+			name:  "url pattern",
+			input: `https://anotheruser:ATBB123abcDEF456ghiJKL789mnoPQR@bitbucket.org`,
+			want:  []string{"anotheruser:ATBB123abcDEF456ghiJKL789mnoPQR"},
+		},
+		{
+			name:  "http basic auth pattern",
+			input: `("basicauthuser", "ATBB123abcDEF456ghiJKL789mnoPQR")`,
+			want:  []string{"basicauthuser:ATBB123abcDEF456ghiJKL789mnoPQR"},
